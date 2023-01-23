@@ -28,7 +28,8 @@ jobs:
       - checkout
       - run:
           name: "print ENv variable on console"
-          command: MY_ENV_VAR	
+          command: |
+            echo $MY_ENV_VAR
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
